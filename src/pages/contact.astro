@@ -10,7 +10,7 @@ import '../styles/global.css';
   </head>
   <body class="bg-white text-gray-900" style="font-family: 'Inter', sans-serif;">
 
-    <!-- Header (matches other pages) -->
+    <!-- Header -->
     <header class="py-10">
       <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-8">
         <a href="/" class="text-3xl tracking-widest uppercase" style="font-family: 'Playfair Display', serif;">
@@ -35,13 +35,7 @@ import '../styles/global.css';
         Send us a message and we'll get back to you within one business day.
       </p>
 
-      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-
-        <!-- Paste your Web3Forms key between the quotes below -->
-        <input type="hidden" name="access_key" value="PASTE_YOUR_KEY_HERE" />
-
-        <!-- Optional: sets the subject of emails you receive -->
-        <input type="hidden" name="subject" value="New contact form submission" />
+      <form action="https://formspree.io/f/xzdyyvnr" method="POST" class="space-y-6">
 
         <div>
           <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">Name</label>
@@ -64,4 +58,26 @@ import '../styles/global.css';
         </div>
 
         <div>
-          <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2"
+          <label class="block text-sm uppercase tracking-widest text-gray-600 mb-2">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full border-b border-gray-300 py-2 focus:border-gray-900 focus:outline-none bg-transparent resize-none"
+          ></textarea>
+        </div>
+
+        <div class="pt-4 text-center">
+          <button
+            type="submit"
+            class="px-10 py-3 border border-gray-900 text-sm uppercase tracking-widest hover:bg-gray-900 hover:text-white transition"
+          >
+            Send Message
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+  </body>
+</html>
