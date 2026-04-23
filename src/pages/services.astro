@@ -5,7 +5,7 @@ import '../styles/global.css';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - Tashi's Basic Web design</title>
+    <title>Services - Tashi's Basic Web Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
   <body class="bg-white text-gray-900" style="font-family: 'Inter', sans-serif;">
@@ -15,35 +15,46 @@ import '../styles/global.css';
         <a href="/" class="text-3xl tracking-widest uppercase" style="font-family: 'Playfair Display', serif;">Your Business</a>
         <nav class="flex gap-10 text-sm uppercase tracking-widest text-gray-700">
           <a href="/" class="hover:text-black">Home</a>
-          
           <a href="/services" class="hover:text-black">Services</a>
-         
           <a href="/contact" class="hover:text-black">Contact</a>
           <a href="/about" class="hover:text-black">About</a>
         </nav>
       </div>
     </header>
 
-    <section class="max-w-3xl mx-auto px-6 py-28">
-      <p class="text-sm uppercase tracking-widest text-gray-500 mb-4 text-center">Our Story</p>
-      <h1 class="text-5xl mb-10 text-center leading-tight" style="font-family: 'Playfair Display', serif;">
-        Services 
+    <section class="max-w-6xl mx-auto px-6 py-28">
+      <p class="text-sm uppercase tracking-widest text-gray-500 mb-4 text-center">Our Services</p>
+      <h1 class="text-5xl mb-16 text-center leading-tight" style="font-family: 'Playfair Display', serif;">
+        Services
       </h1>
 
-      <div class="space-y-6 text-lg text-gray-700 font-light leading-relaxed">
-        <p>
-          Web Design + Appointment Setup (Low Cost)
+      <div class="grid md:grid-cols-2 gap-12 items-center">
 
-Get a professional website and let customers book you instantly—without paying agency prices.
-        </p>
-        <p>
-          Built-In Appointment Booking
-We integrate tools like Calendly or Google Calendar so clients can book you instantly.
-        </p>
-        <p>
-          Fast & Simple Setup
-Launch your site quickly with a streamlined process—no delays, no complexity.
-        </p>
+        <!-- Left side: text -->
+        <div class="space-y-6 text-lg text-gray-700 font-light leading-relaxed">
+          <p>
+            <strong class="text-gray-900">Web Design + Appointment Setup (Low Cost)</strong><br/>
+            Get a professional website and let customers book you instantly — without paying agency prices.
+          </p>
+          <p>
+            <strong class="text-gray-900">Built-In Appointment Booking</strong><br/>
+            We integrate tools like Calendly or Google Calendar so clients can book you instantly.
+          </p>
+          <p>
+            <strong class="text-gray-900">Fast & Simple Setup</strong><br/>
+            Launch your site quickly with a streamlined process — no delays, no complexity.
+          </p>
+        </div>
+
+        <!-- Right side: image -->
+        <div>
+          <img
+            src="/images/servicesphoto.jpg"
+            alt="Web design services"
+            class="w-full h-auto rounded-sm shadow-sm"
+          />
+        </div>
+
       </div>
     </section>
 
