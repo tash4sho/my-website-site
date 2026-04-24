@@ -13,12 +13,17 @@ import '../styles/global.css';
       body { font-family: 'Montserrat', sans-serif; }
       .serif { font-family: 'Cormorant Garamond', serif; }
     </style>
-  </head>
+  <script is:inline>
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", {origin:"https://cal.com"});
+    </script></head>
   <body class="bg-white text-gray-900">
 
     <header class="py-8">
       <div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
-        <a href="/" class="serif text-3xl tracking-wider uppercase">Tashi's Web Design</a>
+        <a href="/">
+  <img src="/images/tashilogo.png" alt="Tashi's Web Design" width="150" />
+</a>
         <nav class="flex gap-8 text-xs uppercase tracking-widest text-gray-700">
           <a href="/" class="hover:text-black">Home</a>
           
@@ -36,7 +41,14 @@ import '../styles/global.css';
         <div class="text-center text-white px-6">
           <p class="text-xs uppercase tracking-widest mb-4 opacity-90">Welcome</p>
           <h1 class="serif text-5xl md:text-6xl font-light mb-4">Crafted with care</h1>
-          <p class="text-sm md:text-base font-light tracking-wide max-w-xl mx-auto opacity-90">A simple tagline describing what you do.</p>
+          <p class="text-sm md:text-base font-light tracking-wide max-w-xl mx-auto opacity-90 mb-8">A simple tagline describing what you do.</p>
+          <button 
+            data-cal-link="tashi"
+            class="inline-block border border-white px-10 py-3 text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition"
+          >
+            Book a Consultation
+          </button>
+        </div>
         </div>
       </div>
     </section>
@@ -86,7 +98,9 @@ import '../styles/global.css';
     <section class="max-w-2xl mx-auto text-center py-20 px-6">
       <h2 class="serif text-4xl md:text-5xl font-light mb-6">Let's work together</h2>
       <p class="text-base text-gray-600 font-light mb-8">Reach out to start a conversation.</p>
-      <a href="/contact" class="inline-block border border-gray-900 px-10 py-3 text-xs uppercase tracking-widest hover:bg-gray-900 hover:text-white transition">Get in Touch</a>
+      <button data-cal-link="tashi" class="inline-block border border-gray-900 px-10 py-3 text-xs uppercase tracking-widest hover:bg-gray-900 hover:text-white transition">
+        Book a Consultation
+      </button>
     </section>
 
     <footer class="border-t border-gray-200 py-10">
