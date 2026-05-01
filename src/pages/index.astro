@@ -3,13 +3,14 @@ import '../styles/global.css';
 ---
 <html lang="en">
   <head>
+   
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tashi's Web Design</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <style>
       body { font-family: 'Montserrat', sans-serif; }
       .serif { font-family: 'Cormorant Garamond', serif; }
@@ -29,28 +30,27 @@ import '../styles/global.css';
           <a href="/" class="hover:text-black">Home</a>
           
           <a href="/services" class="hover:text-black">Services</a>
-          <a href="/products" class="hover:text-black">Products</a>
+          
           <a href="/contact" class="hover:text-black">Contact</a>
           <a href="/about" class="hover:text-black">About</a>
         </nav>
       </div>
     </header>
 
-<section class="relative h-[60vh] max-h-[600px] w-full overflow-hidden">
-  <img src="/images/heros.jpg" alt="nature" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-        <div class="text-center text-white px-6">
-          <p class="text-xs uppercase tracking-widest mb-4 opacity-90">Websites for Service Business, Coaches, Consultants & Therapists</p>
-          <h1 class="serif text-5xl md:text-6xl font-light mb-4">Get a Professional Website for Your Business — Without Paying Thousands</h1>
-          <p class="text-sm md:text-base font-light tracking-wide max-w-xl mx-auto opacity-90 mb-8">We build, host, and manage everything for you starting at $9.99/month</p>
-          <button 
-            data-cal-link="tashi"
-            class="inline-block border border-white px-10 py-3 text-xs uppercase tracking-widest text-white hover:bg-white hover:text-black transition"
-          >
-            Book a Free Call
-          </button>
-        </div>
-        
+    <!-- ✅ NEW ANIMATED MOUNTAIN HERO -->
+    <section class="hero-wrap">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-mist"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Websites for Coaches, Consultants &amp; Therapists</p>
+        <h1 class="hero-h1">Get a Professional Website for Your Business — Without Paying Thousands</h1>
+        <p class="hero-sub">We build, host, and manage everything for you — starting at $29/month.</p>
+        <button data-cal-link="tashi" class="hero-cta">Book a Free Call</button>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <div class="scroll-dot"></div>
       </div>
     </section>
 
